@@ -11,7 +11,7 @@ parser = argparse.ArgumentParser(description="generate a password")
 parser.add_argument(dest="")
 
 
-def generate_password(length=10, nums=1, special_chars=1, uppercase=1, lowercase=1):
+def generate(length=10, nums=1, special_chars=1, uppercase=1, lowercase=1):
     letters = string.ascii_letters
     digits = string.digits
     symbols = string.punctuation
@@ -38,7 +38,7 @@ def generate_password(length=10, nums=1, special_chars=1, uppercase=1, lowercase
 
 
 if __name__ == "__main__":
-    new_password = generate_password(
+    new_password = generate(
         length=8,
         special_chars=1,
         nums=1,
