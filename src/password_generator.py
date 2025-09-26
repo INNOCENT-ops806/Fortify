@@ -6,9 +6,15 @@ import argparse  # module for command-line parsing
 import re
 import secrets
 import string
+import pyperclip
 
 parser = argparse.ArgumentParser(description="generate a password")
 parser.add_argument(dest="")
+
+
+# Function to copy the generated password to the clipboard
+def copy_to_the_clipboard(password_as_arg):
+    pyperclip.copy(password_as_arg)
 
 
 def generate(length=10, nums=1, special_chars=1, uppercase=1, lowercase=1):
@@ -34,6 +40,7 @@ def generate(length=10, nums=1, special_chars=1, uppercase=1, lowercase=1):
             ):
                 break
 
+        copy_to_the_clipboard(password)
         return password
 
 
