@@ -61,5 +61,4 @@ python src/main.py --gui
 ## License
 
 MIT License
-
-## The project is Licensed under MIT License feel free to edit in any way that you want
+The project is Licensed under MIT License feel free to edit in any way that you want
