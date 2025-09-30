@@ -51,15 +51,15 @@ python src/main.py --gui
 ## Images
 
 #### Using the GUI
+
 ![GUI_USAGE_EXAMPLE](./assets/GUI_USAGE_EXAMPLE.png)
 
 ### Using the CLI(recommended)
+
 ![CLI_USAGE_EXAMPLE](./assets/CLI_USAGE_EXAMPLE.png)
 
 ## License
 
 MIT License
 
----
-
-Feel free to adjust the details as needed for your project!
+## The project is Licensed under MIT License feel free to edit in any way that you want
