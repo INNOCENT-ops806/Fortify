@@ -15,6 +15,7 @@ I was forced to (kind of by situation) create this project because I have been f
 - Choose between command-line and GUI modes
 - Automatically saves passwords to a file (with auto-incremented filenames)
 - Copies generated passwords to your clipboard
+- Support for custom password vault directories
 
 ## Installation
 
@@ -39,8 +40,27 @@ I was forced to (kind of by situation) create this project because I have been f
 python src/main.py --length 12 --filename mypass.txt
 ```
 
-- `--length`: Password length (default: 10)
+- `--length`: Password length (default: 8)
 - `--filename`: Output filename (default: output.txt, auto-increments if exists)
+
+#### Custom Directory Paths
+You can specify custom directories for password storage:
+
+```sh
+# Save to home directory
+python src/main.py --filename ~/passwords/mypass.txt
+
+# Save to absolute path
+python src/main.py --filename /home/user/secure/vault/pass.txt
+
+# Save with auto-increment (creates pass1.txt if pass.txt exists)
+python src/main.py --filename ~/passwords/pass.txt
+```
+
+The program will:
+- Create directories automatically if they don't exist
+- Expand `~` to your home directory
+- Auto-increment filenames to prevent overwrites
 
 ### GUI
 

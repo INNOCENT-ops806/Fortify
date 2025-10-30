@@ -1,10 +1,16 @@
 import argparse
 import os
 from password_generator import generate
-import sys
+# import sys
+
 
 def get_unique_filename(filename):
     """Return a unique filename by incrementing if needed."""
+    filename = os.path.expanduser(filename)
+    directory = os.path.dirname(filename)
+    if directory and not os.path.exists(directory):
+        os.makedirs(directory)
+
     base, ext = os.path.splitext(filename)
     counter = 1
     new_filename = filename
@@ -26,7 +32,9 @@ def run_cli(args):
 
 def run_gui():
     import fortifyGUI  # This will launch the GUI
+
     fortifyGUI.launch_gui()
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Fortify Password Generator")
@@ -43,4 +51,3 @@ if __name__ == "__main__":
         run_gui()
     else:
         run_cli(args)
-
