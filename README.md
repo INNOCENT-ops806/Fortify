@@ -34,14 +34,37 @@ I was forced to (kind of by situation) create this project because I have been f
 
 ## Usage
 
+### Binary Executable (No Python Required)
+
+For users who do not have Python installed or prefer a standalone application, a single-file executable is provided.
+
+1. **Download:** Download the latest compiled binary executable for your operating system (e.g., `Fortify.exe` for Windows, `Fortify` for Linux/macOS) from the **[GitHub Releases Page]** (<https://github.com/INNOCENT-ops806/Fortify/releases/tag/v1.0.0>).
+2. **Run:** Place the downloaded file in a directory of your choice.
+3. **Usage:** Run the executable directly from your terminal or command prompt:
+   - **Linux/macOS:**
+
+     ```sh
+     ./Fortify --gui
+     # or
+     ./Fortify --length 12
+     ```
+
+   - **Windows (PowerShell/CMD):**
+
+     ```sh
+     .\Fortify.exe --gui
+     # or
+     .\Fortify.exe --length 12
+     ```
 ### Command-Line (default)
 
 ```sh
 python src/main.py --length 12 --filename mypass.txt
+
 ```
 
-- `--length`: Password length (default: 8)
-- `--filename`: Output filename (default: output.txt, auto-increments if exists)
+- `--length` : Password length (default: 8)
+- `--filename` : Output filename (default: output.txt, auto-increments if exists)
 
 #### Custom Directory Paths
 You can specify custom directories for password storage:
@@ -55,9 +78,10 @@ python src/main.py --filename /home/user/secure/vault/pass.txt
 
 # Save with auto-increment (creates pass1.txt if pass.txt exists)
 python src/main.py --filename ~/passwords/pass.txt
-```
+````
 
 The program will:
+
 - Create directories automatically if they don't exist
 - Expand `~` to your home directory
 - Auto-increment filenames to prevent overwrites
