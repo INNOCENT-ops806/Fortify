@@ -1,6 +1,7 @@
 import argparse
 import os
 from password_generator import generate
+import fortifyGUI
 # import sys
 
 
@@ -31,8 +32,6 @@ def run_cli(args):
 
 
 def run_gui():
-    import fortifyGUI  # This will launch the GUI
-
     fortifyGUI.launch_gui()
 
 
