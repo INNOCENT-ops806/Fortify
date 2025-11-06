@@ -1,7 +1,12 @@
+altgraph==0.17.4
 iniconfig==2.1.0
 packaging==25.0
 pillow==10.4.0
 pluggy==1.6.0
 Pygments==2.19.2
+pyinstaller==6.16.0
+pyinstaller-hooks-contrib==2025.9
+pyperclip==1.11.0
 pytest==8.4.2
+setuptools==80.9.0
 ttkbootstrap==1.14.2
