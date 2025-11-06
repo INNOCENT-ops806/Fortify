@@ -9,4 +9,5 @@ pyinstaller-hooks-contrib==2025.9
 pyperclip==1.11.0
 pytest==8.4.2
 setuptools==80.9.0
+pytest==8.4.2
 ttkbootstrap==1.14.2
