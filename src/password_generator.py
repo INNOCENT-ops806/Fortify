@@ -1,5 +1,5 @@
 """
-A software to generate passwords randomly @author: Innocent(https://github.com/INNOCENT-ops806)
+A software to generate passwords randomly @author: Yahm3(https://github.com/Yahm3)
 """
 
 import argparse  # module for command-line parsing

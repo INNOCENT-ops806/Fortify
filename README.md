@@ -22,7 +22,7 @@ I was forced to (kind of by situation) create this project because I have been f
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/INNOCENT-ops806/Fortify.git
+   git clone https://github.com/Yahm3/Fortify.git
    cd Fortify
    ```
 
@@ -38,7 +38,7 @@ I was forced to (kind of by situation) create this project because I have been f
 
 For users who do not have Python installed or prefer a standalone application, a single-file executable is provided.
 
-1. **Download:** Download the latest compiled binary executable for your operating system (e.g., `Fortify.exe` for Windows, `Fortify` for Linux/macOS) from the [GitHub Releases Page](<https://github.com/INNOCENT-ops806/Fortify/releases/tag/v1.0.0>).
+1. **Download:** Download the latest compiled binary executable for your operating system (e.g., `Fortify.exe` for Windows, `Fortify` for Linux/macOS) from the [GitHub Releases Page](<https://github.com/Yahm3/Fortify/releases/tag/v1.0.0>).
 2. **Run:** Place the downloaded file in a directory of your choice.
 3. **Usage:** Run the executable directly from your terminal or command prompt:
    - **Linux/macOS:**
